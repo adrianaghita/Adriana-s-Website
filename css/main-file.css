@@ -120,3 +120,37 @@ p {
     padding-top: 10rem;
   }
 }
+
+/*Links */
+a {
+  text-decoration: none;
+}
+
+/*Buttons*/
+.btn {
+  background-color: var(--accent-color);
+  padding: 1rem 1.5rem;
+  align-self: left;
+  border: none;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  transition: transform 1s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: var(--hover-color);
+}
+
+.btn a {
+  color: #fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .btn a {
+    font-size: 2rem;
+  }
+}

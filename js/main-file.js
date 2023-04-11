@@ -1,4 +1,4 @@
-new TypeIt(".homepage__text", {
-    speed: 50,
+new TypeIt(".typeIt", {
+    speed: 180,
     waitUntilVisible:true,
   }).go();

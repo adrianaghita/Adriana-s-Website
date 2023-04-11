@@ -1,8 +1,8 @@
 :root {
   --accent-color: #b46060;
   --primary-color: #4d4d4d;
-  --background-color: #fff4e0;
   --hover-color: #c67878;
+  --background-color: #aa7c7a;
 }
 
 /* Typography */
@@ -45,7 +45,7 @@ p {
 p {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   margin-top: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bolder;
   line-height: 1.5;
 }
@@ -64,7 +64,7 @@ p {
   }
 
   p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -111,8 +111,12 @@ p {
 /*Homepage Text*/
 .homepage {
   text-align: left;
-  padding-top: 8rem;
   padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.homepage p {
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -188,7 +192,15 @@ a {
 /*Info Section */
 .info-section {
   text-align: center;
-  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+
+  padding: 8rem 5rem;
+}
+
+.info-section p,
+.info-section h3 {
+  color: #fff;
 }
 
 /* About Me Section */
@@ -222,10 +234,11 @@ a {
 
 /*Progress Bars */
 .progress-bar {
-  animation: progress 5s linear;
+  animation: progress 5s linear 10s;
   font-size: 1.2rem;
   height: 1.3rem;
   text-align: center;
+  background-color: var(--accent-color);
 }
 
 @keyframes progress {
@@ -249,12 +262,12 @@ a {
 .cards {
   row-gap: 2rem;
   column-gap: 4rem;
-  margin: 0 5rem;
+  margin: 0rem 5rem;
+  padding-top: 3rem;
 }
 .card {
   box-shadow: 2px 2px 3px var(--hover-color);
   cursor: pointer;
-  /* width: 30rem; */
 }
 
 .card__body {
@@ -276,7 +289,7 @@ a {
   }
 
   .cards {
-    margin: 0 15rem;
+    margin: 0 10rem;
   }
 }
 
@@ -287,19 +300,17 @@ a {
 
 /*Footer Section */
 footer {
-  background-color: var(--background-color);
   text-align: center;
-  padding: 3rem 1rem;
+  background-color: var(--background-color);
+  padding: 5rem 0;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
 }
 
-footer h3 {
+footer p {
   font-size: 1.5rem;
   font-style: italic;
+  color: #fff;
   margin-bottom: 2rem;
-  margin-top: 0;
-  /* color: var(--primary-color); */
-  background-color: #fff;
-  padding: 2rem 0;
 }
 
 footer .btn a {
@@ -308,11 +319,40 @@ footer .btn a {
 }
 
 @media screen and (min-width: 768px) {
-  footer h3 {
+  footer p {
     font-size: 2rem;
   }
 
   footer .btn a {
     font-size: 1.5rem;
+  }
+}
+
+/* Margins */
+.homepage {
+  margin-bottom: 15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .homepage {
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homepage {
+    margin-bottom: 40rem;
+  }
+}
+
+.info-section,
+.projects-section {
+  margin-bottom: 8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .info-section,
+  .projects-section {
+    margin-bottom: 15rem;
   }
 }

@@ -17,10 +17,134 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="/css/main-file.css" />
   </head>
   <body>
+    <div class="homepage">
+      <nav>
+        <ul class="navbar__items">
+          <li>
+            <a href="mailto:a.adrianaghita@gmail.com" target="_blank">
+              <i class="fa-solid fa-envelope "></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/adrianaghita" target="_blank"
+              ><i class="fa-brands fa-square-github "></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/adriana-ghita/" target="_blank"
+              ><i class="fa-brands fa-linkedin "></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="typeIt">Welcome!</h1>
+      <p class="homepage__text">
+        I'm Adriana Ghiță, a Junior Front-End Developer with a strong passion
+        for web development and a desire to create visually stunning and highly
+        functional websites.
+      </p>
+      <button class="btn">
+        <a href="#projects">Projects</a>
+      </button>
+      <button class="btn">
+        <a href="#"> Download CV</a>
+      </button>
+    </div>
+    <section class="info-section grid grid--1x2">
+      <div class="aboutme">
+        <h3>About me</h3>
+        <img src="/images/mephoto.jpeg" class="img img--round" alt="..." />
+        <p class="aboutme__txt">
+          I am a self-motivated individual who is always seeking new challenges
+          and opportunities to grow as a front-end developer. Formerly a
+          cognitive behavioral psychotherapist, I made the decision to pursue my
+          interest in programming and left my job to dedicate myself to learning
+          and developing my programming skills. I am a collaborative person who
+          values communication and feedback. I am always eager to learn from
+          others and improve my skills.
+        </p>
+      </div>
+      <div class="skills">
+        <h3>Skills</h3>
+        <p class="skill">
+          HTML:
+        </p>
+        <div class=" progress progress-bar" style="width: 90%">
+          80%
+        </div>
+
+        <p class="skill">CSS</p>
+        <div class=" progress progress-bar" style="width: 90%">80%</div>
+        <p class="skill">JavaScript</p>
+        <div class=" progress progress-bar" style="width: 70%">
+          60%
+        </div>
+        <p class="skill">React</p>
+        <div class=" progress progress-bar " style="width: 40%">
+          30%
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h3>Projects</h3>
+      <div class="cards grid grid--1x2">
+        <div class="card">
+          <a href="/html components/palindrome.html" target="_blank">
+            <img src="/images/palindrome.png" class="card-img-top" alt="..." />
+            <div class="card__body">
+              <p>
+                Palindrome Checker
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/html components/darkMode.html" target="_blank">
+            <img src="/images/darkmode.png" class="card-img-top" alt="..." />
+            <div class="card__body">
+              <p>
+                Dark Mode
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/html components/backgroundColor.html" target="_blank">
+            <img
+              src="/images/backgroundcolor.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card__body">
+              <p>
+                Color Flipper
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <img src="/images/moshify.png" class="card-img-top" alt="..." />
+          <div class="card__body">
+            <p>
+              Moshify
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        "Embrace challenges and grow through them."
+      </p>
+      <button class="btn">
+        <a href="#">Back to top</a>
+      </button>
+    </footer>
+
     <script
       src="https://kit.fontawesome.com/c3865401fc.js"
       crossorigin="anonymous"

@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #000;
+  --accent-color: #e64c18;
+}
+
+.dark--theme {
+  background: #000;
+  --primary-color: #fff;
+  --accent-color: #cb380b;
+}
+
+body {
+  background-color: rgba(241, 240, 221, 0.841);
+  color: var(--primary-color);
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__items {
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar__items:hover {
+  color: var(--accent-color);
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+
+.hero {
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 40rem;
+}
+
+.hero h1 {
+  color: var(--accent-color);
+  letter-spacing: 1rem;
+}
+
+.hero__action {
+  border-radius: 2rem;
+  border: 1px solid var(--accent-color);
+  box-shadow: 1px 3px 1px #9b470e;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: transform 1s;
+  margin: 1rem 10rem;
+}
+
+.hero__action:hover {
+  transform: scale(1.1);
+}
+
+.hero__action p {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+#icon {
+  cursor: pointer;
+  object-fit: contain;
+  position: relative;
+  width: 3rem;
+}

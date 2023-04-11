@@ -22,6 +22,7 @@ h2,
 h3 {
   font-family: "Italiana", "Times New Roman", Times, serif;
   margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 h1 {
@@ -163,5 +164,83 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+  }
+}
+
+/* Images */
+.img--round {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .img--round {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+/*Info Section */
+.info-section {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+/* About Me Section */
+.aboutme__txt {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutme__txt {
+    font-size: 1.5rem;
+  }
+}
+
+/*Skills Section */
+.skills p {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.skills h3 {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .skills p {
+    font-size: 2rem;
+  }
+}
+
+/*Progress Bars */
+.progress-bar {
+  animation: progress 5s linear;
+  font-size: 1.2rem;
+  height: 1.3rem;
+  text-align: center;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .progress-bar {
+    height: 2rem;
+    font-size: 2rem;
   }
 }

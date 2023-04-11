@@ -246,15 +246,15 @@ a {
 }
 
 /*Cards */
+.cards {
+  row-gap: 2rem;
+  column-gap: 4rem;
+  margin: 0 5rem;
+}
 .card {
-  margin: 2rem 3rem;
   box-shadow: 2px 2px 3px var(--hover-color);
   cursor: pointer;
-  transition: transform 1s;
-}
-
-.card:hover {
-  transform: scale(1.1);
+  /* width: 30rem; */
 }
 
 .card__body {
@@ -268,4 +268,19 @@ a {
 
 .card__body p:hover {
   color: var(--hover-color);
+}
+
+@media screen and (min-width: 768px) {
+  .card__body p {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    margin: 0 15rem;
+  }
+}
+
+/*Projects Section */
+.projects-section {
+  text-align: center;
 }

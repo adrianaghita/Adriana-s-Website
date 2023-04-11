@@ -244,3 +244,28 @@ a {
     font-size: 2rem;
   }
 }
+
+/*Cards */
+.card {
+  margin: 2rem 3rem;
+  box-shadow: 2px 2px 3px var(--hover-color);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__body {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.card__body p {
+  font-weight: 600;
+}
+
+.card__body p:hover {
+  color: var(--hover-color);
+}

@@ -1,15 +1,15 @@
 
-const hero__action = document.querySelector('.hero__action');
-const title = document.querySelector('.hero__title');
+const action = document.querySelector('.btn__action');
+const title = document.querySelector('.title');
 
-hero__action.addEventListener('click', function () {
+action.addEventListener('click', function () {
     document.body.classList.toggle ("dark--theme");
     if (document.body.classList.contains('dark--theme')) {
-        icon.src = "/images/sun.png"
+        icon.src = "/images/moon.png"
         title.textContent = 'Dark Mode';
     }
     else {
-        icon.src = "/images/moon.png"  
+        icon.src = "/images/sun.png"  
         title.textContent = 'Light Mode';
     }
 

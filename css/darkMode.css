@@ -39,40 +39,37 @@ ul {
   transition: transform 1s;
 }
 
-.hero {
+body {
   text-align: center;
-  margin: 4rem auto;
-  max-width: 40rem;
 }
 
-.hero h1 {
+.title {
   color: var(--accent-color);
   letter-spacing: 1rem;
+  text-align: center;
+  margin-top: 4rem;
 }
 
-.hero__action {
-  border-radius: 2rem;
+.btn__action {
+  align-self: center;
+  border-radius: 3rem;
+  background-color: transparent;
   border: 1px solid var(--accent-color);
-  box-shadow: 1px 3px 1px #9b470e;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  transition: transform 1s;
-  margin: 1rem 10rem;
 }
 
-.hero__action:hover {
+.btn__action:hover {
   transform: scale(1.1);
 }
 
-.hero__action p {
+.btn__action p {
   font-size: 1rem;
-  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
 }
 
 #icon {
-  cursor: pointer;
-  object-fit: contain;
-  position: relative;
-  width: 3rem;
+  width: 2rem;
+  background-color: var(--accent-color);
+  margin-right: 1rem;
 }

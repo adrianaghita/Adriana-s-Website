@@ -26,17 +26,17 @@
         <ul class="navbar__items">
           <li>
             <a href="mailto:a.adrianaghita@gmail.com" target="_blank">
-              <i class="fa-solid fa-envelope "></i
+              <i class="fa-solid fa-envelope"></i
             ></a>
           </li>
           <li>
             <a href="https://github.com/adrianaghita" target="_blank"
-              ><i class="fa-brands fa-square-github "></i
+              ><i class="fa-brands fa-square-github"></i
             ></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/adriana-ghita/" target="_blank"
-              ><i class="fa-brands fa-linkedin "></i
+              ><i class="fa-brands fa-linkedin"></i
             ></a>
           </li>
         </ul>
@@ -51,7 +51,12 @@
         <a href="#projects">Projects</a>
       </button>
       <button class="btn">
-        <a href="#"> Download CV</a>
+        <a
+          href="/elements/CV-Ghita Adriana_compressed.pdf"
+          download="CV-Adriana Ghita"
+        >
+          Download CV</a
+        >
       </button>
     </div>
     <section class="info-section grid grid--1x2">
@@ -70,37 +75,52 @@
       </div>
       <div class="skills">
         <h3>Skills</h3>
-        <p class="skill">
-          HTML:
-        </p>
-        <div class=" progress progress-bar" style="width: 90%">
-          80%
-        </div>
+        <p class="skill">HTML:</p>
+        <div class="progress progress-bar" style="width: 90%">80%</div>
 
         <p class="skill">CSS</p>
-        <div class=" progress progress-bar" style="width: 90%">80%</div>
+        <div class="progress progress-bar" style="width: 90%">80%</div>
         <p class="skill">JavaScript</p>
-        <div class=" progress progress-bar" style="width: 70%">
-          60%
-        </div>
+        <div class="progress progress-bar" style="width: 70%">60%</div>
         <p class="skill">React</p>
-        <div class=" progress progress-bar " style="width: 40%">
-          30%
-        </div>
+        <div class="progress progress-bar" style="width: 40%">30%</div>
       </div>
     </section>
 
     <section id="projects" class="projects-section">
       <h3>Projects</h3>
-      <i class=" projects__icon fa-solid fa-laptop-code"></i>
+      <i class="projects__icon fa-solid fa-laptop-code"></i>
       <div class="cards grid grid--1x2">
+        <div class="card">
+          <a
+            href="https://github.com/adrianaghita/the-gallery-spot"
+            target="_blank"
+          >
+            <img
+              src="/images/e-commerce website.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card__body">
+              <p>E-commerce website(Angular)</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="/html/Moshify.html" target="_blank">
+            <img src="/images/moshify.png" class="card-img-top" alt="..." />
+            <div class="card__body">
+              <p>Moshify</p>
+            </div>
+          </a>
+        </div>
+
         <div class="card">
           <a href="/html/palindrome.html" target="_blank">
             <img src="/images/palindrome.png" class="card-img-top" alt="..." />
             <div class="card__body">
-              <p>
-                Palindrome Checker
-              </p>
+              <p>Palindrome Checker</p>
             </div>
           </a>
         </div>
@@ -108,9 +128,7 @@
           <a href="/html/darkMode.html" target="_blank">
             <img src="/images/darkmode.png" class="card-img-top" alt="..." />
             <div class="card__body">
-              <p>
-                Dark Mode
-              </p>
+              <p>Dark Mode</p>
             </div>
           </a>
         </div>
@@ -122,28 +140,14 @@
               alt="..."
             />
             <div class="card__body">
-              <p>
-                Color Flipper
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="/html/Moshify.html" target="_blank">
-            <img src="/images/moshify.png" class="card-img-top" alt="..." />
-            <div class="card__body">
-              <p>
-                Moshify
-              </p>
+              <p>Color Flipper</p>
             </div>
           </a>
         </div>
       </div>
     </section>
     <footer>
-      <p>
-        "Embrace challenges and grow through them."
-      </p>
+      <p>"Embrace challenges and grow through them."</p>
       <button class="btn">
         <a href="#">Back to top</a>
       </button>
